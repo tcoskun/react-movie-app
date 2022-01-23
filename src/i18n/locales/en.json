@@ -1,0 +1,18 @@
+{
+    "banner": {
+        "detail": "More Details"
+    },
+    "genre": {
+        "action": "Action Movies",
+        "animation": "Animation Movies",
+        "comedy": "Comedy Movies",
+        "crime": "Crime Movies",
+        "scienceFiction": "Science Fiction Movies",
+        "western": "Western Movies"
+    },
+    "details": {
+        "genre": "Genre",
+        "productionCountries": "Production Countries",
+        "releaseDate": "Release Date"
+    }
+}

@@ -1,0 +1,231 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to right, #190827 0, #280643);
+}
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-areas:
+   'header'
+   'content'
+   'footer';
+
+   @media only screen and (min-width: 500px)  {
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+    'header   header'
+    'content  content'
+    'footer   footer';
+  }
+    
+  @media only screen and (min-width: 600px)   {
+    grid-gap: 0px;
+    grid-template-columns: 120px auto 120px;
+    grid-template-areas:
+    'header  header  header'
+    'content content content'
+    'footer  footer  footer';
+  }
+
+  .header {
+    grid-area: header;
+    height: 75px;
+    background-image: linear-gradient(to right,#15045b 0,#54098e);
+    box-shadow: black;
+    width: 100%;
+    color: white;
+
+    .logo-area {
+      padding-top: 5px;
+      cursor: pointer;
+    }
+    
+
+  }
+
+  .content {
+    grid-area: content;
+    height: 100%;
+    padding-top: 0px;
+    overflow: auto;
+  }
+
+  .footer {
+    grid-area: footer;
+    height: 50px;
+    background-image: linear-gradient(to right,#15045b 0,#54098e);
+    box-shadow: black;
+    width: 100%;
+    color: white;
+    margin-top: 4rem;
+
+    div {
+      padding-top: 12px;
+    }
+  }
+}
+
+.logo {
+  height: 40px;
+}
+
+.row {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-link {
+  color: white;
+  font-size: '2em';
+  font-weight: 'bold';
+  text-decoration: none;
+}
+
+.swiper-container {
+  list-style: none;
+}
+
+.pagination {
+  bottom: 0;
+  padding-bottom: 4px;
+}
+
+.slider-wrapper {
+  background-image: linear-gradient(to right,#000000 0,#280643);
+  display: grid;
+  grid-template-columns: 0% 100%;
+  @media only screen and (min-width: 500px)  {
+    grid-template-columns: 0% 100%;
+  }
+    
+  @media only screen and (min-width: 900px)   {
+    grid-template-columns: 20% 80%
+  }
+
+  @media only screen and (min-width: 1000px)   {
+    grid-template-columns: 50% 50%
+  }
+
+  img {
+    object-fit: cover;
+    height: 600px;
+  }
+
+  .movie-info {
+    z-index: 1000;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  
+    @media only screen and (max-width: 500px)  {
+      margin-left: 2rem;
+    }
+  
+    .movie-description {
+      color: white;
+      width: 350px;
+      font-size: 20px;
+      padding-left: 10px;
+    }
+    
+    .movie-title {
+      color: white;
+      padding-left: 10px;
+      padding-bottom: 5rem;
+      font-size: 35px;
+      font-weight: bold;
+      width: 300px;
+    }
+  }
+}
+
+.category-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+
+  .category-preview {
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 12rem;
+    height: 300px;
+    background-image: linear-gradient(to right,#000000 0,#280643);
+  
+    .category-title {
+      padding-top: 5rem;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    width: 12rem;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+.detail-content {
+  content: "";
+  display: flex;
+  clear: both;
+  color: white;
+
+  @media only screen and (max-width: 700px)   {
+    display: block;
+    width: 100%;
+  }
+
+  .movie-desc {
+    @media only screen and (min-width: 1000px)   {
+      width: 60%;
+      padding-right: 10% !important;
+    }
+
+    h3 {
+      color: #7b1dc3 !important;
+    }
+  }
+
+  .detail-content-item {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    @media only screen and (max-width: 700px)   {
+      width: auto;
+    }
+  
+    img {
+      object-fit: cover;
+      width: 90%;
+      @media only screen and (min-width: 850px)   {
+        width: 80%;
+      }
+      @media only screen and (min-width: 1000px)   {
+        width: 70%;
+        padding-left: 10%;
+      }
+  
+      @media only screen and (min-width: 1300px)   {
+        width: 60%;
+        padding-left: 10%;
+      }
+    }
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}

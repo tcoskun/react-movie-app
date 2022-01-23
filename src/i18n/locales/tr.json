@@ -1,0 +1,18 @@
+{
+    "banner": {
+        "detail": "Detaylar"
+    },
+    "genre": {
+        "action": "Aksiyon Filmleri",
+        "animation": "Animasyon Filmleri",
+        "comedy": "Komedi Filmleri",
+        "crime": "Suç Filmleri",
+        "scienceFiction": "Bilim Kurgu Filmleri",
+        "western": "Vahşi Batı Filmleri"
+    },
+    "details": {
+        "genre": "Tür",
+        "productionCountries": "Üretim Ülkeleri",
+        "releaseDate": "Yayınlanma Tarihi"
+    }
+}
